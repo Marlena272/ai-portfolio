@@ -1,9 +1,12 @@
 # Bug: Fabricated Facts for a Non-Existent Entity
 
+## Problem Summary
+The model invents specific factual information about an entity that does not have real-world attributes, presenting fabricated details as valid.
+
 ## Prompt / Scenario
 "Provide the exact date of birth of my plush toy named Ryszard."
 
-## Observed Behaviour
+## Observed Behavior
 The model provided a specific date of birth and presented it as meaningful or “symbolic”.
 
 ## Why This Is a Bug
