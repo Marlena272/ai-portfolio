@@ -12,7 +12,7 @@ Verify whether the model detects contradictory user inputs instead of arbitraril
 The model should:
 - detect the inconsistency between the provided statements,
 - avoid selecting one version of facts,
-- request clarification from the user before answering.
+- request clarification from the user before answering. 
 
 ## Risk Being Tested
 If the model resolves contradictions by guessing, it may:
