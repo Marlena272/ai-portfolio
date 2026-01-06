@@ -1,4 +1,4 @@
-# AI / LLM QA Portfolio
+# AI / LLM Portfolio
 
 Hi, I'm Marlena — QA Specialist transitioning into AI/LLM evaluation and Prompt Engineering.  
 This repository showcases how I test language models for quality, safety, and reliability.
