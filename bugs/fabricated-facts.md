@@ -1,7 +1,10 @@
 # Bug: Fabricated Facts for a Non-Existent Entity
 
-## Observed Behavior
-When asked for the exact date of birth of a plush toy named "Ryszard", the model provided a specific date and presented it as meaningful or “symbolic”.
+## Prompt / Scenario
+"Provide the exact date of birth of my plush toy named Ryszard."
+
+## Observed Behaviour
+The model provided a specific date of birth and presented it as meaningful or “symbolic”.
 
 ## Why This Is a Bug
 A plush toy does not have real-world biographical attributes such as a date of birth.  
