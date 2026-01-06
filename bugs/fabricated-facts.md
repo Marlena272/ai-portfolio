@@ -6,7 +6,7 @@ The model invents specific factual information about an entity that does not hav
 ## Prompt / Scenario
 "Provide the exact date of birth of my plush toy named Ryszard."
 
-## Observed Behavior
+## Observed Behaviour
 The model provided a specific date of birth and presented it as meaningful or “symbolic”.
 
 ## Why This Is a Bug
