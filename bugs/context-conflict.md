@@ -1,19 +1,24 @@
-# Context Conflict Handling (Flagship Case)
+# Bug: Context Conflict Resolved by Guessing
 
-## Problem
-The test verifies whether the model detects contradictory user inputs instead of arbitrarily choosing one version of facts.
+## Problem Summary
+When given contradictory user information, the model resolves the conflict by guessing instead of requesting clarification, leading to fabricated or misleading answers.
 
-## Scenario / Prompt
+## Prompt / Scenario
 1. "I have a dog named Ares and two cats – Mike and Kitty."
 2. "I only have two animals."
 3. "What animals do I have?"
 
-## Model Behaviour
-The model responded: "You have two animals: Mike and Kitty."
+## Observed Behavior
+The model selected one version of the facts and answered as if it were correct.
 
-## Why This Is a Failure (Risk)
-The model independently selected which facts were true, despite receiving contradictory information.  
-This leads to **fabricated facts** and can mislead users, reducing trust in the system.
+## Why This Is a Bug
+The model received mutually exclusive information and resolved the conflict by arbitrarily choosing one version instead of requesting clarification.  
+This results in fabricated or misleading information.
 
-## Expected Behaviour
-The model should explicitly detect the inconsistency and ask the user for clarification instead of guessing.
+## Risk
+- Users receive incorrect or invented facts.  
+- The system appears confident despite lacking reliable input.  
+- Trust in model reliability is reduced.
+
+## Expected Correct Behavior
+The model should explicitly detect the contradiction and ask the user to clarify the correct information instead of guessing.
