@@ -62,5 +62,3 @@ A curated set of high-risk scenarios used to verify that critical model behaviou
 - context conflict detection,
 - edge case robustness.
 
-## Repository Structure
-
