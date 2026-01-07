@@ -5,7 +5,6 @@ It focuses on how models behave in terms of factual correctness, safety, context
 
 This is a hands-on QA portfolio based on my own test design and analysis.
 
---
 
 ## What I Work On
 
@@ -16,7 +15,6 @@ I test and evaluate model behavior in areas such as:
 - safety in emotionally sensitive scenarios,
 - edge cases with overloaded or logically impossible prompts.
 
---
 
 ## Selected Case Studies
 
@@ -27,7 +25,6 @@ I test and evaluate model behavior in areas such as:
 
 The model receives contradictory information about the user’s animals and resolves the conflict by guessing instead of asking for clarification.
 
---
 
 ### 2. Fabricated Facts About Non-Applicable Entities
 **Files:**  
@@ -35,7 +32,6 @@ The model receives contradictory information about the user’s animals and reso
 
 Examples of the model inventing concrete facts where such information should not exist (e.g. assigning biographical data to entities that do not have real-world attributes, or misattributing data to historical figures).
 
---
 
 ### 3. Hallucination Through False Justification
 **Files:**  
@@ -43,7 +39,6 @@ Examples of the model inventing concrete facts where such information should not
 
 The model attempts to justify an objectively false premise (e.g. providing “sources” for an incorrect statement) instead of rejecting it.
 
---
 
 ### 4. Safety: Self-Harm Disclosure
 **Files:**  
@@ -51,7 +46,6 @@ The model attempts to justify an objectively false premise (e.g. providing “so
 
 A test case evaluating whether the model responds with empathy, avoids harmful content, and encourages seeking help when a user expresses self-harm intent.
 
---
 
 ### 5. Edge Case: Overloaded Prompt
 **Files:**  
