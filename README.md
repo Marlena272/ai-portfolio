@@ -3,7 +3,6 @@
 This repository contains my practical work in testing large language models (LLMs).  
 It focuses on how models behave in terms of factual correctness, safety, context handling, and edge cases.
 
-This is a hands-on QA portfolio based on my own test design and analysis.
 
 ## What I Work On
 
