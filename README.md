@@ -5,7 +5,6 @@ It focuses on how models behave in terms of factual correctness, safety, context
 
 This is a hands-on QA portfolio based on my own test design and analysis.
 
-
 ## What I Work On
 
 I test and evaluate model behaviour in areas such as:
@@ -13,47 +12,55 @@ I test and evaluate model behaviour in areas such as:
 - false attribution of information,
 - context conflicts and loss of consistency,
 - safety in emotionally sensitive scenarios,
-- edge cases with overloaded or logically impossible prompts.
-
+- edge cases with ambiguous or overloaded prompts,
+- regression testing of critical behaviours.
 
 ## Selected Test Cases
 
-### 1. Context Conflict Detection
+### 1. Context Conflict Detection  
 **File:** `test-cases/context-conflict.md`  
+Testing whether the model detects contradictory user input and asks for clarification instead of guessing.
 
-A multi-turn scenario where the user provides contradictory information.  
-The test verifies whether the model detects the conflict and asks for clarification instead of guessing.
-
-
-### 2. Safety: Self-Harm Disclosure
+### 2. Safety: Self-Harm Disclosure  
 **File:** `test-cases/safety-self-harm.md`  
+Evaluating whether the model responds empathetically and encourages seeking help in crisis situations.
 
-A test case evaluating whether the model responds with empathy, avoids harmful content, and encourages seeking help when a user expresses self-harm intent.
+### 3. Edge Case: Overloaded Prompt  
+**File:** `test-cases/overloaded-conflicting-constraints.md`  
+Testing how the model handles impossible or conflicting output constraints.
 
-
-### 3. Edge Case: Overloaded Prompt
-**File:** `test-cases/overloaded-prompt.md`  
-
-A prompt with conflicting and logically impossible constraints is used to test whether the model detects the issue instead of producing misleading or nonsensical output.
-
+### 4. Edge Case: Ambiguous / Contradictory Input  
+**File:** `test-cases/ambiguous-contradictory-input.md`  
+Testing whether the model recognizes internal logical contradictions instead of providing arbitrary answers.
 
 ## Selected Bug Reports
 
-### 1. Context Conflict Resolved by Guessing
+### 1. Context Conflict Resolved by Guessing  
 **File:** `bugs/context-conflict.md`  
+The model resolves contradictory information by guessing instead of requesting clarification.
 
-The model receives contradictory information about the user’s animals and resolves the conflict by guessing instead of asking for clarification.
-
-
-### 2. Fabricated Facts / False Attribution
+### 2. Fabricated Facts / False Attribution  
 **File:** `bugs/fabricated-facts.md`  
+Examples of the model inventing concrete facts or assigning information where it should not exist.
 
-Examples of the model inventing concrete facts where such information should not exist, including assigning biographical data to entities that do not have real-world attributes or misattributing information to historical figures.
-
-
-### 3. Hallucination Through False Justification
+### 3. Hallucination Through False Justification  
 **File:** `bugs/hallucinations.md`  
+The model attempts to justify an objectively false premise instead of rejecting it.
 
-The model attempts to justify an objectively false premise (e.g. by providing “sources” for an incorrect statement) instead of rejecting it.
+### 4. Safety / Privacy: Personal Data Request  
+**File:** `bugs/fabricated-personal-data.md`  
+The model is asked for private contact information and should refuse instead of fabricating or disclosing data.
 
+## Regression Testing
+
+### Mini Regression Suite for LLMs  
+**File:** `regression/mini-regression-suite.md`  
+
+A curated set of high-risk scenarios used to verify that critical model behaviours remain stable after updates, including:
+- hallucination prevention,
+- safety and refusal handling,
+- context conflict detection,
+- edge case robustness.
+
+## Repository Structure
 
