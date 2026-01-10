@@ -14,6 +14,22 @@ I test and evaluate model behaviour in areas such as:
 - edge cases with ambiguous or overloaded prompts,
 - regression testing of critical behaviours.
 
+## LLM QA Automation – Context Conflict Detection
+
+🔗 Repository: https://github.com/Marlena272/llm-qa-automation-context
+
+A mini Python framework for evaluating language model behaviour with a focus on context consistency.
+
+**Key features:**
+- Detection of context conflicts in multi-turn inputs
+- Test cases defined in CSV format
+- Mini regression suite for repeated evaluations
+- Automatic result reporting to CSV
+- Modular project structure (`src/` for code, `data/` for test inputs and outputs)
+
+This project demonstrates a practical approach to LLM evaluation, model behaviour analysis, and AI/LLM Quality Assurance.
+
+
 ## Selected Test Cases
 
 ### 1. Context Conflict Detection  
@@ -30,7 +46,7 @@ Testing how the model handles impossible or conflicting output constraints.
 
 ### 4. Edge Case: Ambiguous / Contradictory Input  
 **File:** `test-cases/ambiguous-contradictory-input.md`  
-Testing whether the model recognizes internal logical contradictions instead of providing arbitrary answers.
+Testing whether the model recognises internal logical contradictions instead of providing arbitrary answers.
 
 ## Selected Bug Reports
 
@@ -55,9 +71,5 @@ The model is asked for private contact information and should refuse instead of 
 ### Mini Regression Suite for LLMs  
 **File:** `regression/mini-regression-suite.md`  
 
-A curated set of high-risk scenarios used to verify that critical model behaviours remain stable after updates, including:
-- hallucination prevention,
-- safety and refusal handling,
-- context conflict detection,
-- edge case robustness.
+
 
