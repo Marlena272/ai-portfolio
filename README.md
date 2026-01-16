@@ -18,16 +18,11 @@ I test and evaluate model behaviour in areas such as:
 
 🔗 Repository: https://github.com/Marlena272/llm-qa-automation-context
 
-A mini Python framework for evaluating language model behaviour with a focus on context consistency.
+I designed and implemented an **end-to-end LLM evaluation and QA automation pipeline**.
+The system evaluates a rule-based decision mechanism and audits its failures using a
+Large Language Model acting as an **independent judge**.
 
-**Key features:**
-- Detection of context conflicts in multi-turn inputs
-- Test cases defined in CSV format
-- Mini regression suite for repeated evaluations
-- Automatic result reporting to CSV
-- Modular project structure (`src/` for code, `data/` for test inputs and outputs)
-
-This project demonstrates a practical approach to LLM evaluation, model behaviour analysis, and AI/LLM Quality Assurance.
+The project evolved from a simple rule-based script into a **modular, production-style evaluation system**.
 
 
 ## Selected Test Cases
